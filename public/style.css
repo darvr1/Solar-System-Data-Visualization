@@ -4,14 +4,48 @@ body {
 }
 
 nav {
+    background-color: rgba(235, 235, 235, 0.7);
     position: absolute;
     right: 0;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     height: 100vh;
     border-left: 1px solid black;
 }
 
+nav section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+nav section>a {
+    padding-left: 20px;
+}
+
+nav a, nav button {
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav button {
+    border: 0;
+    text-align:left;
+    background-color: transparent;
+}
+
 nav a {
-    margin: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+nav a.highlight {
+    background-color: rgb(200, 200, 200);
 }
