@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100vh;
+    border-left: 1px solid black;
+}
+
+nav a {
+    margin: 10px;
+}
