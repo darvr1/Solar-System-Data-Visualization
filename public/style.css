@@ -4,10 +4,11 @@ body {
 }
 
 nav {
-    background-color: rgba(235, 235, 235, 0.7);
-    position: absolute;
+    overflow: scroll;
+    background-color: rgba(235, 235, 235, 0.5);
+    position: fixed;
     right: 0;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     height: 100vh;
     border-left: 1px solid black;
@@ -28,7 +29,7 @@ nav a, nav button {
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 nav button {
@@ -43,9 +44,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(225, 225, 225);
+    background-color: rgba(225, 225, 225, 0.5);
 }
 
 nav a.highlight {
-    background-color: rgb(200, 200, 200);
+    background-color: rgba(200, 200, 200, 0.5);
 }
