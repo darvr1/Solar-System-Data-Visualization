@@ -14,13 +14,13 @@ nav {
     border-left: 1px solid black;
 }
 
-nav section {
+nav div {
     background-color: transparent;
     display: flex;
     flex-direction: column;
 }
 
-nav section>a {
+nav div > a {
     padding-left: 20px;
 }
 
