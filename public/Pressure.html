@@ -40,7 +40,7 @@
                 <div>
                  <b>Category</b>   
                     <select onchange="redirectToPage(this.value)">
-                        <option value="">Select</option>
+                        <option value="select">Select</option>
                         <option value="Mass">Mass (10^24kg)</a></option>
                         <option value="Diameter">Diameter (km)</option>
                         <option value="Density">Density (kg/m^3)</option>
@@ -66,6 +66,9 @@
                     <script>
                         function redirectToPage(selectedValue) {
                             switch(selectedValue) {
+                                case 'select':
+                                    window.location.href = 'visualization.html';
+                                    break;  
                                 case 'Mass':
                                     window.location.href = 'Mass.html';
                                     break;
@@ -126,7 +129,7 @@
                     </script>
                 </div>
             </div>
-            <div class = "box">chart TBD</div>
+            <div class = "box">Pressure chart</div>
         </div>
 
     </body>
