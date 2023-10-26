@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <title>Visualization</title>
+        <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
+        <!-- What does 'defer' and 'async' do -->
+        <script src="script.js" defer></script>
     </head>
     <body>
         <nav>
@@ -33,16 +36,15 @@
             <br>
             <br>
             <br>
-            <br>
-            <br>
+
             <div class="Space">
             
                 <div>
                  <b>Category</b>   
-                    <select onchange="redirectToPage(this.value)">
+                    <select>
                         <option value="">Select</option>
-                        <option value="Mass">Mass (10^24kg)</a></option>
-                        <option value="Diameter">Diameter (km)</option>
+                        <option value="Mass" onclick="bubbleChart()">Mass (10^24kg)</option>
+                        <option value="Diameter" onclick="bubbleChart1()">Diameter (km)</option>
                         <option value="Density">Density (kg/m^3)</option>
                         <option value="Surface">Surface Gravity(m/s^2)</option>
                         <option value="Escape">Escape Velocity (km/s)</option>
@@ -63,70 +65,58 @@
                         <option value="Global">Global Magnetic Field</option>           
            
                     </select>
+                    <br>
+                    <div id="myDiv" style="width: 700px; height: 700px"></div>
+                    <br>
                     <script>
-                        function redirectToPage(selectedValue) {
-                            switch(selectedValue) {
-                                case 'Mass':
-                                    window.location.href = 'Mass.html';
-                                    break;
-                                case 'Diameter':
-                                    window.location.href = 'Diameter.html';
-                                    break;
-                                case 'Density':
-                                    window.location.href = 'Density.html';
-                                    break;
-                                case 'Surface':
-                                    window.location.href = 'Surface.html';
-                                    break;
-                                case 'Escape':
-                                    window.location.href = 'Escape.html';
-                                    break;
-                                case 'Rotation':
-                                    window.location.href = 'Rotation.html';
-                                    break;
-                                case 'Length':
-                                    window.location.href = 'Length.html';
-                                    break;
-                                case 'Distance':
-                                    window.location.href = 'Distance.html';
-                                    break;                                // 다른 옵션들에 대한 case 추가
-                                case 'Perihelion':
-                                    window.location.href = 'Perihelion.html';
-                                    break;                            
-                                case 'Aphelion':
-                                    window.location.href = 'Aphelion.html';
-                                    break;
-                                case 'Period':
-                                    window.location.href = 'Period.html';
-                                    break;
-                                case 'Velocity':
-                                    window.location.href = 'Velocity.html';
-                                    break;
-                                case 'Inclination':
-                                    window.location.href = 'Inclination.html';
-                                    break;
-                                case 'Eccentricity':
-                                    window.location.href = 'Eccentricity.html';
-                                    break;
-                                case 'Orbit':
-                                    window.location.href = 'Orbit.html';
-                                    break;
-                                case 'Mean':
-                                    window.location.href = 'Mean.html';
-                                    break;
-                                case 'Pressure':
-                                    window.location.href = 'Pressure.html';
-                                    break;
-                                case 'Moon':
-                                    window.location.href = 'Moon.html';
-                                    break;
-                                
+
+                        function bubbleChart() {
+                            var trace1 = {
+                                x: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+                                y: [10, 20, 30, 40, 50, 60, 70, 80],
+                                mode: 'markers',
+                                marker: {
+                                    size: [8.2, 27.4, 28.1, 8.3, 100, 41.4, 29.4, 30.1]
                                 }
+                            };
+
+                            var data = [trace1];
+
+                            var layout = {
+                                title: 'Mass (10^24kg)',
+                                showlegend: false,
+                                height: 700,
+                                width: 700
+                            };
+
+                            Plotly.newPlot('myDiv', data, layout);
                         }
+
+                        function bubbleChart1() {
+                            var trace2 = {
+                                x: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+                                y: [10, 20, 30, 40, 50, 60, 70, 80],
+                                mode: 'markers',
+                                marker: {
+                                    size: [3.2, 8, 8.5, 4.5, 100, 84, 35.6, 34.4]
+                                }
+                            };
+
+                            var data = [trace2];
+
+                            var layout = {
+                                title: 'Diameter (km)',
+                                showlegend: false,
+                                height: 700,
+                                width: 700
+                            };
+
+                            Plotly.newPlot('myDiv', data, layout);
+                        }
+
                     </script>
                 </div>
             </div>
-            <div class = "box">chart TBD</div>
         </div>
 
     </body>
