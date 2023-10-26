@@ -15,10 +15,15 @@ body {
     background: #ecf0f3;
 }
 
+#login {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
 .wrapper {
     max-width: 350px;
     min-height: 400px;
-    /*margin: 80px auto;*/
     padding: 40px 30px 30px 30px;
     background-color: #ecf0f3;
     border-radius: 15px;
