@@ -8,18 +8,17 @@ function planetDropdown() {
         box.style.height = "256px";
     } else {
         box.style.height = "0px";
-
     }
     sessionStorage.setItem("buttonState", isOpen);
-    console.log(sessionStorage.getItem("buttonState", isOpen));
 }
-
-window.onload = () => {
+    
+window.addEventListener("load", () => {
+    // Need to come up with a better name
     const PLACEHOLDERNAME = sessionStorage.getItem("buttonState");
     box.style.transition = "none";
     if (PLACEHOLDERNAME == "true") {
         planetDropdown();
     }
-    window.setTimeout(() => {box.style.transition = "height 0.5s"}, 0)
-}
+    window.setTimeout(() => {box.style.transition = "height 0.5s"}, 100)
+});
 }
