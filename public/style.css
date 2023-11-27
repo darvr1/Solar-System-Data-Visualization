@@ -135,7 +135,7 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
+nav a:hover, nav button:hover {
     background-color: rgba(215, 215, 215, 0.5);
 }
 

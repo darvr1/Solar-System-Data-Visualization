@@ -1,4 +1,5 @@
 { // Navigation
+// Planet dropdown
 let box = document.querySelector("nav div");
 let isOpen = false;
 
