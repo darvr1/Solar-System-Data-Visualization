@@ -98,16 +98,15 @@ nav {
     height: 100vh;
     border-left: 1px solid black;
     z-index: 5;
-
-    /* comment or comment out line 19 if you want the nav bar hidden or not */
-    /* so you can have a better look at your page */
-    /* width: 0; */
+    width: 135px;
+    transition: width 0.5s;
 }
 
 nav div {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
     height: 0px;
 }
 
@@ -120,7 +119,7 @@ nav a, nav button {
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 10px;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 nav button {
@@ -141,6 +140,18 @@ nav a:hover, nav button:hover {
 
 nav a.highlight {
     background-color: rgba(190, 190, 190, 0.5);
+}
+
+#stickButton {
+    font-size: 30px;
+    border: 0;
+    position: absolute;
+    background-color: transparent;
+    right: 140px;
+    bottom: 47vh;
+    cursor: pointer;
+    transition: right 0.5s;
+    z-index: 5;
 }
 
 /* FAQ Page */
