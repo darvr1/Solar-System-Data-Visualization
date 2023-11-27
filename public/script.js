@@ -10,12 +10,8 @@ let isNavOpen = true;
 function planetDropdown() {
     isDropdownOpen = !isDropdownOpen;
     if (isDropdownOpen) {
-        setTimeout(() => {
-            planetDropdownBox.style.overflowY = "scroll";
-        }, 500);
         planetDropdownBox.style.height = "256px";
     } else {
-        planetDropdownBox.style.overflowY = "hidden";
         planetDropdownBox.style.height = "0px";
     }
     sessionStorage.setItem("planetButtonState", isDropdownOpen);
@@ -27,18 +23,12 @@ function navSwitch() {
     if (isNavOpen) {
         navButton.style.right = "140px";
         nav.style.width = "135px";
-        // Re-apply initial overflow propert when transition is finished
-        setTimeout(() => {
-            nav.style.overflow = "scroll";
-        }, 500);
         setTimeout(() => {
             navButton.textContent = "→";
         }, 250);
     } else {
         navButton.style.right = "5px";
         nav.style.width = "0px";
-        // Hide scrollbar during transition
-        nav.style.overflow = "hidden";
         setTimeout(() => {
             navButton.textContent = "←";
         }, 250);

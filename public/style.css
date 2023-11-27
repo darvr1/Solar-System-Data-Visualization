@@ -89,7 +89,7 @@ body {
 
 /* Navigation */
 nav {
-    overflow: scroll;
+    overflow: hidden;
     background-color: rgba(235, 235, 235, 0.5);
     position: fixed;
     right: 0;
@@ -105,8 +105,7 @@ nav {
 nav div {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 0px;
 }
 
