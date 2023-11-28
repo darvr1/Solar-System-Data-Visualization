@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 
 body {
@@ -192,4 +193,12 @@ nav a.highlight {
 }
 */
 
+/*Planet Tables*/
+table{
+    border: 2px black;
+}
+tr, td{
+    border: 2px black;
+    padding: 8px;
 
+}
