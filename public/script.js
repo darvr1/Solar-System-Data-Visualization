@@ -219,4 +219,31 @@ function bubbleChart6() {
 
     Plotly.newPlot('myDiv', data, layout);
 }
+
+function bubbleChart7() {
+    var trace8 = {
+        x: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+        y: [17.2, 33.6, 50, 74.7, 99.8, 134.7, 192.6, 235.1],
+        text: ['Distance from Sun: 57.9', 'Distance from Sun: 108.2', 'Distance from Sun: 149.6', 'Distance from Sun: 228', 'Distance from Sun: 778.5', 'Distance from Sun: 1432', 'Distance from Sun: 2867', 'Distance from Sun: 4515'],
+        mode: 'markers',
+        marker: {
+            size: [17.2, 33.6, 50, 74.7, 99.8, 134.7, 192.6, 235.1],
+            color: ['rgb(53, 159, 168)', 'rgb(238, 200, 81)', 'rgb(50, 77, 255)', 'rgb(226, 50, 15)', 'rgb(255, 184, 112)', 'rgb(248, 235, 208)', 'rgb(191, 253, 254)', 'rgb(8, 22, 255)']
+        }
+    };
+
+    var data = [trace8];
+
+    var layout = {
+        title: 'Distance from Sun (10^6 km)',
+        showlegend: false,
+        height: 700,
+        width: 700
+    };
+
+    Plotly.newPlot('myDiv', data, layout);
+}
+
+
+
 }
