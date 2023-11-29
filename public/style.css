@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
+    color: white;
 }
 
 body {
@@ -123,6 +123,7 @@ nav a, nav button {
 }
 
 nav button {
+    color: black;
     border: 0;
     text-align:left;
     background-color: transparent; 
@@ -193,6 +194,10 @@ nav a.highlight {
 }
 */
 
+select {
+    color: black;
+}
+
 /*Planet Tables*/
 h2 {
     text-align: center;
@@ -206,4 +211,8 @@ tr, td{
     border: 2px black;
     padding: 8px;
 
+}
+
+body {
+    background-image: url(Galaxy-background.jpg);
 }
