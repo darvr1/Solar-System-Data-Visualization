@@ -91,7 +91,7 @@ body {
 /* Navigation */
 nav {
     overflow: hidden;
-    background-color: rgba(235, 235, 235, 0.5);
+    background-color: rgba(235, 235, 235, 0.75);
     position: fixed;
     right: 0;
     display: inline-flex;
@@ -144,7 +144,7 @@ nav a.highlight {
 }
 
 #stickButton {
-    font-size: 30px;
+    font-size: 50px;
     border: 0;
     position: absolute;
     background-color: transparent;
