@@ -194,8 +194,13 @@ nav a.highlight {
 */
 
 /*Planet Tables*/
+h2 {
+    text-align: center;
+}
+
 table{
     border: 2px black;
+    margin: auto;
 }
 tr, td{
     border: 2px black;
