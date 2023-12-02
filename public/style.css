@@ -94,7 +94,7 @@ body {
 
 /* Navigation */
 #stickButton {
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 15px;
     cursor: pointer;
@@ -157,11 +157,15 @@ nav a {
 }
 
 nav a:hover, nav button:hover {
-    background-color: rgba(215, 215, 215, 0.5);
+    background-color: rgba(190, 190, 190, 0.8);
+}
+
+nav a:active, nav button:active {
+    background-color: rgba(150, 150, 150, 0.8);
 }
 
 nav a.highlight {
-    background-color: rgba(190, 190, 190, 0.5);
+    background-color: rgba(170, 170, 170, 0.8);
 }
 
 /* FAQ Page */
