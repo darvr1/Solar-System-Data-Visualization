@@ -60,7 +60,7 @@ function bubbleChart() {
         title: 'Mass (10^24kg)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -84,7 +84,7 @@ function bubbleChart1() {
         title: 'Diameter (km)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -108,7 +108,7 @@ function bubbleChart2() {
         title: 'Density (kg/m^3)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -133,7 +133,7 @@ function bubbleChart3() {
         title: 'Surface Gravity (m/s^2)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -157,7 +157,7 @@ function bubbleChart4() {
         title: 'Escape Velocity (km/s)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -181,7 +181,7 @@ function bubbleChart5() {
         title: 'Rotaion Period (hours)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -206,7 +206,7 @@ function bubbleChart6() {
         title: 'Length of Day (hours)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -230,7 +230,7 @@ function bubbleChart7() {
         title: 'Distance from Sun (10^6 km)',
         showlegend: false,
         height: 700,
-        width: 700
+        width: 1200
     };
 
     Plotly.newPlot('myDiv', data, layout);
