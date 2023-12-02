@@ -10,6 +10,9 @@
 
 body {
     background: #ecf0f3;
+    background-image: url(Galaxy-background.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-size: 1920px 1080px; */
 }
 
 #login {
@@ -211,9 +214,4 @@ table{
 tr, td{
     border: 2px black;
     padding: 8px;
-
-}
-
-body {
-    background-image: url(Galaxy-background.jpg);
 }
