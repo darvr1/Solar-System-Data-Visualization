@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-family: 'AlphaCentauri', sans-serif;                                             
+    font-family: 'AlphaCentauri', sans-serif;
     color: white;
 }
 
@@ -93,18 +93,35 @@ body {
 }
 
 /* Navigation */
+#stickButton {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#stickButton:hover {
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+#stickButton:active {
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
 nav {
     overflow: hidden;
-    background-color: rgba(235, 235, 235, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
     position: fixed;
-    right: 10px;
     display: inline-flex;
     flex-direction: column;
-    height: 100vh;
-    border-left: 1px solid black;
     z-index: 5;
-    width: 135px;
-    transition: width 0.5s;
+    transition: right 0.65s;
+    border-radius: 15px;
+    top: 90px;
+    width: 160px;
+    right: 15px;
 }
 
 nav div {
@@ -145,18 +162,6 @@ nav a:hover, nav button:hover {
 
 nav a.highlight {
     background-color: rgba(190, 190, 190, 0.5);
-}
-
-#stickButton {
-    font-size: 50px;
-    border: 0;
-    position: absolute;
-    background-color: transparent;
-    right: 140px;
-    bottom: 47vh;
-    cursor: pointer;
-    transition: right 0.5s;
-    z-index: 5;
 }
 
 /* FAQ Page */

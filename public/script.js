@@ -10,7 +10,7 @@ let isNavOpen = true;
 function planetDropdown() {
     isDropdownOpen = !isDropdownOpen;
     if (isDropdownOpen) {
-        planetDropdownBox.style.height = "256px";
+        planetDropdownBox.style.height = "240px";
     } else {
         planetDropdownBox.style.height = "0px";
     }
@@ -21,17 +21,9 @@ function planetDropdown() {
 function navSwitch() {
     isNavOpen = !isNavOpen;
     if (isNavOpen) {
-        navButton.style.right = "140px";
-        nav.style.width = "135px";
-        setTimeout(() => {
-            navButton.textContent = "→";
-        }, 250);
+        nav.style.right = "15px";
     } else {
-        navButton.style.right = "5px";
-        nav.style.width = "0px";
-        setTimeout(() => {
-            navButton.textContent = "←";
-        }, 250);
+        nav.style.right = "-160px";
     }
 }
 
