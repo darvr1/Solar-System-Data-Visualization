@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: rgb(210, 210, 210);
 }
 
 select {
@@ -35,10 +35,15 @@ header * {
     margin: 40px;
 }
 
+/* Login */
 #login {
     display: flex;
     justify-content: center;
     padding: 100px;
+}
+
+#login h1, .text-center-fs-6 {
+    color: black;
 }
 
 .wrapper {
@@ -114,6 +119,7 @@ header * {
 
 /* Navigation */
 #stickButton {
+    filter: invert(85%);
     z-index: 5;
     position: fixed;
     top: 25px;
@@ -121,20 +127,19 @@ header * {
     width: 40px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 #stickButton:hover {
-    background-color: rgba(225, 225, 225, 0.8);
+    background-color: rgba(175, 175, 175, 0.5);
 }
 
 #stickButton:active {
-    background-color: rgba(200, 200, 200, 0.8);
+    background-color: rgba(100, 100, 100, 0.5);
 }
 
 nav {
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(50, 50, 50, 0.5);
     position: fixed;
     display: inline-flex;
     flex-direction: column;
@@ -167,7 +172,6 @@ nav a, nav button {
 }
 
 nav button {
-    color: black;
     border: 0;
     text-align:left;
     background-color: transparent; 
@@ -175,20 +179,19 @@ nav button {
 }
 
 nav a {
-    color: black;
     text-decoration: none;
 }
 
 nav a:hover, nav button:hover {
-    background-color: rgba(190, 190, 190, 0.8);
+    background-color: rgba(65, 65, 65, 0.5);
 }
 
 nav a:active, nav button:active {
-    background-color: rgba(150, 150, 150, 0.8);
+    background-color: rgba(120, 120, 120, 0.5);
 }
 
 nav a.highlight {
-    background-color: rgba(170, 170, 170, 0.8);
+    background-color: rgba(100, 100, 100, 0.5);
 }
 
 /* FAQ Page */
