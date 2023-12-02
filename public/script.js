@@ -21,7 +21,7 @@ function planetDropdown() {
 function navSwitch() {
     isNavOpen = !isNavOpen;
     if (isNavOpen) {
-        nav.style.right = "15px";
+        nav.style.right = "30px";
     } else {
         nav.style.right = "-160px";
     }
