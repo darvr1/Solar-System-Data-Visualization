@@ -10,7 +10,7 @@
 
 body {
     background: #ecf0f3;
-    background-image: url(Galaxy-background.jpg);
+    background-image: url(/images/Galaxy-background.jpg);
     /* background-repeat: no-repeat; */
     /* background-size: 1920px 1080px; */
 }
@@ -97,7 +97,7 @@ nav {
     overflow: hidden;
     background-color: rgba(235, 235, 235, 0.75);
     position: fixed;
-    right: 0;
+    right: 10px;
     display: inline-flex;
     flex-direction: column;
     height: 100vh;
