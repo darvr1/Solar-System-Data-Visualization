@@ -13,9 +13,7 @@ select {
 
 body {
     background: #ecf0f3;
-    background-image: url(/images/Galaxy-background.jpg);
-    /* background-repeat: no-repeat; */
-    /* background-size: 1920px 1080px; */
+    background-image: url(images/stars_starry_sky_black_184789_1920x1080.jpg);
 }
 
 main {
@@ -116,6 +114,7 @@ header * {
 
 /* Navigation */
 #stickButton {
+    z-index: 5;
     position: fixed;
     top: 25px;
     right: 30px;
