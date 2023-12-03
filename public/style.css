@@ -242,8 +242,10 @@ h2 {
 table{
     border: 2px black;
     margin: auto;
+    text-align: right;
 }
 tr, td{
-    border: 2px black;
+    border: 8px black;
     padding: 8px;
+    text-align: left;
 }
