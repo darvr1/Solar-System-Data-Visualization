@@ -7,8 +7,11 @@
     color: rgb(210, 210, 210);
 }
 
-select {
-    color: black;
+select, option {
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 body {
@@ -19,7 +22,6 @@ body {
 main {
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 header {
@@ -117,6 +119,14 @@ header * {
     color: #000000;
 }
 
+/* Text Background */
+.text-bubble {
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 20px;
+    padding: 25px;
+    width: 1000px;
+}
+
 /* Navigation */
 #stickButton {
     filter: invert(85%);
@@ -199,23 +209,21 @@ nav a.highlight {
     width: 1000px;
     margin:auto;
     flex-direction: column;
-    align-items: center;
-}
-
-#faq > h1 {
-    margin: 50px;
+    align-items: start;
 }
 
 #faq section {
-    position: relative;
     border-radius: 10px;
-    margin: 10px;
-    width: 100%;
+    margin-bottom: 20px;
 }
 
 #faq section > * {
-    padding-left: 30px;
-    padding-right:30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#faq section h1 {
+    margin-bottom: 30px;
 }
 
 /*Visualization
