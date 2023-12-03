@@ -249,3 +249,16 @@ tr, td{
     padding: 8px;
     text-align: left;
 }
+
+/*Venus images*/
+#venus{
+    float: left;
+}
+#venus-2{
+    float: left;
+}
+.column img{
+    margin-top: 8px;
+    vertical-align: left
+    ;
+}
