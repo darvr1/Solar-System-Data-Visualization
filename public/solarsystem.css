@@ -80,17 +80,13 @@ img {
     border-radius: 50%;
 }
 
-#saturnimg {
-    position:absolute;
-    top: -15px;
-    left: -90px;
-    border-radius: 0;
-}
-
 .celestial_body {
     border-radius: 50%;
     position: absolute;
     translate: -50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sun {
