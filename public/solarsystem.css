@@ -19,23 +19,23 @@
 }
 
 @keyframes jupiter-orbit {
-    0% {transform: rotate(-36deg) translate(900px);}
-    100% {transform: rotate(36deg) translate(900px);}
+    0% {transform: rotate(-40deg) translate(900px);}
+    100% {transform: rotate(40deg) translate(900px);}
 }
 
 @keyframes saturn-orbit {
-    0% {transform: rotate(-24deg) translate(1200px);}
-    100% {transform: rotate(24deg) translate(1200px);}
+    0% {transform: rotate(-27deg) translate(1200px);}
+    100% {transform: rotate(27deg) translate(1200px);}
 }
 
 @keyframes uranus-orbit {
-    0% {transform: rotate(-18deg) translate(1500px);}
-    100% {transform: rotate(18deg) translate(1500px);}
+    0% {transform: rotate(-20deg) translate(1500px);}
+    100% {transform: rotate(20deg) translate(1500px);}
 }
 
 @keyframes neptune-orbit {
-    0% {transform: rotate(-15deg) translate(1800px);}
-    100% {transform: rotate(15deg) translate(1800px);}
+    0% {transform: rotate(-17deg) translate(1800px);}
+    100% {transform: rotate(17deg) translate(1800px);}
 }
 
 body {
