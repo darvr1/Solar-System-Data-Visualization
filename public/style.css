@@ -117,6 +117,31 @@ header * {
     color: #000000;
 }
 
+#register {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+#register h1, .text-center-fs-6 {
+    color: black;
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 400px;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 13px 13px 20px rgb(18, 47, 77), -13px -13px 20px rgb(255, 255, 255)000;
+}
+
+label {
+	display:inline-block;
+	text-align:left;
+	width:80px;
+}
+
 /* Navigation */
 #stickButton {
     filter: invert(85%);
