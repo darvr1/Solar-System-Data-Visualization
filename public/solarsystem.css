@@ -1,0 +1,213 @@
+@keyframes merc-orbit {
+    0% {transform: rotate(-95deg) translate(400px);}
+    100% {transform: rotate(95deg) translate(400px);}
+}
+
+@keyframes venus-orbit {
+    0% {transform: rotate(-82deg) translate(500px);}
+    100% {transform: rotate(82deg) translate(500px);}
+}
+
+@keyframes earth-orbit {
+    0% {transform: rotate(-56deg) translate(600px);}
+    100% {transform: rotate(56deg) translate(600px);}
+}
+
+@keyframes mars-orbit {
+    0% {transform: rotate(-45deg) translate(700px);}
+    100% {transform: rotate(45deg) translate(700px);}
+}
+
+@keyframes jupiter-orbit {
+    0% {transform: rotate(-40deg) translate(900px);}
+    100% {transform: rotate(40deg) translate(900px);}
+}
+
+@keyframes saturn-orbit {
+    0% {transform: rotate(-27deg) translate(1200px);}
+    100% {transform: rotate(27deg) translate(1200px);}
+}
+
+@keyframes uranus-orbit {
+    0% {transform: rotate(-20deg) translate(1500px);}
+    100% {transform: rotate(20deg) translate(1500px);}
+}
+
+@keyframes neptune-orbit {
+    0% {transform: rotate(-17deg) translate(1800px);}
+    100% {transform: rotate(17deg) translate(1800px);}
+}
+
+body {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    pointer-events: none;
+    z-index: 5;
+    top: 30%;
+    position: absolute;
+    background-color: rgba(50, 50, 50, 0.5);
+    border-radius: 20px;
+}
+
+.text-bubble {
+    padding: 5px;
+    border-radius: 8px;
+    width: 160px;
+    pointer-events: none;
+    display: inline;
+    position:absolute;
+    z-index: 5;
+    bottom: 20px;
+    right: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.celestial_body {
+    border-radius: 50%;
+    position: absolute;
+    translate: -50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sun {
+    /* background-color: yellow; */
+    width: 600px;
+    height: 600px;
+}
+
+#merc-orbit-radius {
+    border: white 1px dashed;
+    width: 800px;
+    height: 800px;
+}
+
+#mercury {
+    /* background-color: gray; */
+    /* Make mercury easier to click */
+    width: 50px;
+    height: 50px;
+    animation: merc-orbit 8s linear infinite;
+}
+
+#venus-orbit-radius {
+    border: white 1px dashed;
+    width: 1000px;
+    height: 1000px;
+}
+
+#venus {
+    /* background-color: rgb(211, 80, 80); */
+    width: 40px;
+    height:40px;
+    animation: venus-orbit 17s linear -3s infinite;
+}
+
+#earth-orbit-radius {
+    border: white 1px dashed;
+    width: 1200px;
+    height: 1200px;
+}
+
+#earth {
+    /* background-color: #009200; */
+    width: 40px;
+    height:40px;
+    animation: earth-orbit 19s linear -2.5s infinite;
+}
+
+#mars-orbit-radius {
+    border: white 1px dashed;
+    width: 1400px;
+    height: 1400px;
+}
+
+#mars {
+    /* background-color: brown; */
+    width: 30px;
+    height: 30px;
+    animation: mars-orbit 29s linear -3.5s infinite;
+}
+
+#jupiter-orbit-radius {
+    border: white 1px dashed;
+    width: 1800px;
+    height: 1800px;
+}
+
+#jupiter {
+    /* background-color: rgb(139, 59, 59); */
+    width: 200px;
+    height: 200px;
+    animation: jupiter-orbit 166s linear -30s infinite;
+}
+
+#saturn-orbit-radius {
+    border: white 1px dashed;
+    width: 2400px;
+    height: 2400px;
+}
+
+#saturn {
+    /* background-color: rgb(192, 135, 135); */
+    width: 120px;
+    height: 120px;
+    animation: saturn-orbit 278s linear -30s infinite;
+}
+
+#uranus-orbit-radius {
+    border: white 1px dashed;
+    width: 3000px;
+    height: 3000px;
+}
+
+#uranus {
+    /* background-color: rgb(50, 199, 245); */
+    width: 80px;
+    height: 80px;
+    animation: uranus-orbit 589s linear -65s infinite;
+}
+
+#neptune-orbit-radius {
+    border: white 1px dashed;
+    width: 3600px;
+    height: 3600px;
+}
+
+#neptune {
+    /* background-color: rgb(15, 99, 255); */
+    width: 80px;
+    height: 80px;
+    animation: neptune-orbit 982s linear -115s infinite;
+}
+
+/* Not sure why using 'class':hover is not working */
+#mercury:hover,
+#venus:hover,
+#earth:hover,
+#mars:hover,
+#jupiter:hover,
+#saturn:hover,
+#uranus:hover,
+#neptune:hover {
+    animation-play-state: paused;
+} 

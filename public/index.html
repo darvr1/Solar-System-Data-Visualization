@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="solarsystem.css" />
         <title>Home</title>
         <link href="https://fonts.cdnfonts.com/css/alphacentauri" rel="stylesheet">
     </head>
@@ -31,7 +32,28 @@
             <h1>Planets of the Solar System</h1>
             <h3>Created by Team DayTa</h3>
         </header>
-
+        <div class="text-bubble">
+            <p>Not to scale</p>
+        </div>
+        <main>
+            <div id="merc-orbit-radius" class="celestial_body"></div>
+            <div id="venus-orbit-radius" class="celestial_body"></div>
+            <div id="earth-orbit-radius" class="celestial_body"></div>
+            <div id="mars-orbit-radius" class="celestial_body"></div>
+            <div id="jupiter-orbit-radius" class="celestial_body"></div>
+            <div id="saturn-orbit-radius" class="celestial_body"></div>
+            <div id="uranus-orbit-radius" class="celestial_body"></div>
+            <div id="neptune-orbit-radius" class="celestial_body"></div>
+            <div id="sun" class="celestial_body"><img src="images/home_page_planets/sun.png" style="width: 600px; height: 600px;"></div>
+            <a href="planets/mercury.html" id="mercury" class="celestial_body"><img src="images/home_page_planets/mercury.png" style="width: 20px; height: 20px;"></a>
+            <a href="planets/venus.html" id="venus" class="celestial_body"><img src="images/home_page_planets/venus.png" style="width: 40px; height: 40px;"></a>
+            <a href="planets/earth.html" id="earth" class="celestial_body"><img src="images/home_page_planets/earth.png" style="width: 40px; height: 40px;"></a>
+            <a href="planets/mars.html" id="mars" class="celestial_body"><img src="images/home_page_planets/mars.png" style="width: 30px; height: 30px;"></a>
+            <a href="planets/jupiter.html" id="jupiter" class="celestial_body"><img src="images/home_page_planets/jupiter.png" style="width: 200px; height: 200px;"></a>
+            <a href="planets/saturn.html" id="saturn" class="celestial_body"><img src="images/home_page_planets/saturn.png" style="height:150px" id="saturnimg"></a>
+            <a href="planets/uranus.html" id="uranus" class="celestial_body"><img src="images/home_page_planets/uranus.png" style="width: 85px; height: 85px;"></a>
+            <a href="planets/neptune.html" id="neptune" class="celestial_body"><img src="images/home_page_planets/neptune.png" style="width: 80px; height: 80px;"></a>
+        </main>
         <script src="script.js"></script>
     </body>
 </html>
