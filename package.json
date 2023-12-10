@@ -1,0 +1,26 @@
+{
+  "name": "group-project-2-website-alexjborders",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/1rJGhksS) # CSC317-Group-Project-Website Group Project Website - in HTML & CSS",
+  "main": "server317.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server317.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDev317-03-Fall2023/group-project-2-website-alexjborders.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebDev317-03-Fall2023/group-project-2-website-alexjborders/issues"
+  },
+  "homepage": "https://github.com/WebDev317-03-Fall2023/group-project-2-website-alexjborders#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.2"
+  }
+}
