@@ -329,3 +329,49 @@ tr, td{
 #register h3 {
     color: black;
 }
+
+#about {
+    flex-direction: column;
+    align-items: center;
+}
+
+#about section {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#about div {
+    position: relative;
+    height: 300px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.aboutlinks {
+    position: absolute;
+    bottom: 0px;
+}
+
+#about h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+#about p {
+    text-indent: 50px;
+    line-height: 25px;
+    word-spacing: 2px;
+}
+
+#about img {
+    height: 300px;
+}
+
+.aboutparagraph {
+    padding: 10px;
+    text-indent: 80px;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 25px;
+}
