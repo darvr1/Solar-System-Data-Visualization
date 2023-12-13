@@ -366,3 +366,15 @@ tr, td{
     line-height: 25px;
 }
 
+.planets-page section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.planets-page img {
+    position: absolute;
+    z-index: -5;
+    opacity: 0.3;
+    height: 800px;
+}
