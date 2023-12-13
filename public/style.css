@@ -355,7 +355,8 @@ tr, td{
 }
 
 #about img {
-    height: 300px;
+    object-fit: cover;
+    width: 250px;
 }
 
 .aboutparagraph {
