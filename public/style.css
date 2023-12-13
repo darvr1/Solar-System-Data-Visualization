@@ -22,6 +22,8 @@ body {
 main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -304,26 +306,14 @@ h2 {
 
 table{
     border: 2px black;
-    margin: auto;
+    /* margin: auto; */
     text-align: right;
+    display: inline;
 }
 tr, td{
     border: 8px black;
     padding: 8px;
     text-align: left;
-}
-
-/*Venus images*/
-#venus{
-    float: left;
-}
-#venus-2{
-    float: left;
-}
-.column img{
-    margin-top: 8px;
-    vertical-align: left
-    ;
 }
 
 #register h3 {
@@ -375,3 +365,4 @@ tr, td{
     word-spacing: 2px;
     line-height: 25px;
 }
+
