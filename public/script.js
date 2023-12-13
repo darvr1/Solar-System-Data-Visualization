@@ -125,12 +125,48 @@ function massData(type) {
     let data = [trace1];
 
     let layout = {
-        title: 'Mass (10^24kg)',
+        title: {
+            text: 'Mass (10^24kg)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Mass (10^24kg)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
-
+    
     Plotly.newPlot('myDiv', data, layout);
 }
 
@@ -150,10 +186,46 @@ function diameterData(type) {
     let data = [trace2];
 
     let layout = {
-        title: 'Diameter (km)',
+        title: {
+            text: 'Diameter (km)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Diameter (km)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -175,10 +247,46 @@ function densityData(type) {
     let data = [trace3];
 
     let layout = {
-        title: 'Density (kg/m^3)',
+        title: {
+            text: 'Density (kg/m^3)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Density (kg/m^3)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -201,10 +309,46 @@ function surfaceData(type) {
     let data = [trace4];
 
     let layout = {
-        title: 'Surface Gravity (m/s^2)',
+        title: {
+            text: 'Surface Gravity(m/s^2)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Surface Gravity(m/s^2)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -226,10 +370,46 @@ function escapeData(type) {
     let data = [trace5];
 
     let layout = {
-        title: 'Escape Velocity (km/s)',
+        title: {
+            text: 'Escape Velocity (km/s)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Escape Velocity (km/s)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -251,10 +431,46 @@ function rotationData(type) {
     let data = [trace6];
 
     let layout = {
-        title: 'Rotaion Period (hours)',
+        title: {
+            text: 'Rotation Period (hours)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Rotation Period (hours)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -277,11 +493,48 @@ function lengthData(type) {
     let data = [trace7];
 
     let layout = {
-        title: 'Length of Day (hours)',
+        title: {
+            text: 'Length of Day (hours)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Length of Day (hours)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
+
 
     Plotly.newPlot('myDiv', data, layout);
 }
@@ -302,10 +555,46 @@ function distanceData(type) {
     let data = [trace8];
 
     let layout = {
-        title: 'Distance from Sun (10^6 km)',
+        title: {
+            text: 'Distance from Sun (10^6 km)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Distance from Sun (10^6 km)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -327,10 +616,46 @@ function PerihelionData(type) {
     let data = [trace9];
 
     let layout = {
-        title: 'Perihelion (10^6 km)',
+        title: {
+            text: 'Perihelion (10^6 km)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Perihelion (10^6 km)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -352,10 +677,46 @@ function AphelionData(type) {
     let data = [trace10];
 
     let layout = {
-        title: 'Aphelion (10^6 km)',
+        title: {
+            text: 'Aphelion (10^6 km)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Aphelion (10^6 km)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -377,10 +738,46 @@ function PeriodData(type) {
     let data = [trace11];
 
     let layout = {
-        title: 'Orbital Period (days)',
+        title: {
+            text: 'Orbital Period (days)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Orbital Period (days)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -402,10 +799,46 @@ function VelocityData(type) {
     let data = [trace12];
 
     let layout = {
-        title: 'Orbital Velocity (km/s)',
+        title: {
+            text: 'Orbital Velocity (km/s)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Orbital Velocity (km/s)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -427,10 +860,46 @@ function InclinationData(type) {
     let data = [trace13];
 
     let layout = {
-        title: 'Orbital Inclination (degrees)',
+        title: {
+            text: 'Orbital Inclination (degrees)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Orbital Inclination (degrees)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -452,10 +921,46 @@ function EccentricityData(type) {
     let data = [trace14];
 
     let layout = {
-        title: 'Orbital Eccentricity',
+        title: {
+            text: 'Orbital Eccentricity',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Orbital Eccentricity',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -477,10 +982,46 @@ function ObliquityData(type) {
     let data = [trace15];
 
     let layout = {
-        title: 'Obliquity to Orbit (degrees)',
+        title: {
+            text: 'Obliquity to Orbit (degrees)',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Obliquity to Orbit (degrees)',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
 
     Plotly.newPlot('myDiv', data, layout);
@@ -502,12 +1043,47 @@ function MoonData(type) {
     let data = [trace16];
 
     let layout = {
-        title: 'Number of Moons',
+        title: {
+            text: 'Number of Moons',
+            font: {
+                color: 'white',
+                size: 20
+            }
+        },
         showlegend: false,
         height: 700,
-        width: 950
+        width: 950,
+        paper_bgcolor: 'transparent',
+        plot_bgcolor: 'transparent',
+        xaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Planets',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 18
+            },
+        },
+        yaxis: {
+            gridcolor: 'transparent',
+            title: {
+                text: 'Number of Moons',
+                font: {
+                    color: 'white',
+                    size: 16
+                }
+            },
+            tickfont: {
+                color: 'white',
+                size: 16
+            },
+        }
     };
-
     Plotly.newPlot('myDiv', data, layout);
 }
 
